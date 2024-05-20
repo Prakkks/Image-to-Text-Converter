@@ -2,6 +2,7 @@
 const dropArea = document.getElementById("drop-area");
 const inputFile = document.getElementById("input-file");
 const imageView = document.getElementById("img-view");
+// const home = document.getElementById("droparea");
 
 
 
@@ -9,6 +10,7 @@ inputFile.addEventListener("change",uploadImage);
 
 function uploadImage(){
     // inputFile.files[0];
+    // dropArea.style.width ='50%' ;
     let imgLink = URL.createObjectURL(inputFile.files[0]); //gives url of image
     imageView.style.backgroundImage = `url(${imgLink})`;
     imageView.textContent="";
