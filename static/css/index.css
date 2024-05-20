@@ -48,13 +48,17 @@
 }
 
 #submit
-{   margin: 14px 0;
+{   
+    margin: 14px 0;
     padding: 8px;
     border: none; 
+    position: relative;
+    bottom: -35px;
+    right: -650px;
     border-radius: 05px;
-    display: block;
-    width: 300px;
-    margin: 0 auto; /* Center the input itself */
+    /* display: block; */
+    width: 200px;
+    /* margin: 0 auto; Center the input itself */
     background-color: #979aaf;
 
 }
@@ -127,8 +131,14 @@
     padding: 5px;
     margin-bottom: 10px;
     align-items: center;
-    background-color: #979aaf;
+    background-color: #f7f8ff;
     border-radius: 05px;
+}
+
+.vertical-card:hover
+{
+    
+    background-color: #edeef5;
 }
 
 .vertical-card button
@@ -138,6 +148,27 @@
 
 
 
+ #image-info{
+  background: None;
+  /* border: dashed 1px black; */
+  overflow-y: scroll;
+  scrollbar-width: none;
+ }
+
+ 
+.btn-close:active,  
+.btn-close:focus
+{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+.btn-close:active
+{
+    background: transparent;
+}
 .image-show 
 {
     display: flex;
@@ -159,6 +190,11 @@
     #home{
         flex-direction: column;
        }
+
+#submit
+{
+    position: static;
+}
 }
 
 @media (max-width: 600px)
