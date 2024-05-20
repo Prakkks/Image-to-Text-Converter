@@ -7,6 +7,18 @@ const cardContainer = document.getElementById("image-info");
 // const home = document.getElementById("droparea");
 
 
+submit.addEventListener("click",function(e){
+    e.preventDefault();
+    const images = cardContainer.querySelectorAll('.vertical-card img');
+    const imageUrls = [];
+
+    images.forEach(img => {
+        imageUrls.push(img.src);
+    });
+    console.log("hello");
+    console.log(imageUrls);
+})
+
 
 inputFile.addEventListener("change",uploadImage);
 
